@@ -12,36 +12,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        @media (min-width: 900px){
+            #main-container{
+                width: 900px;
+            }
+        }
+    
+    </style>
 </head>
 <body class="grid justify-center items-center h-screen p-2 bg-orange-100">
-    <main class=" flex flex-wrap text-left border rounded-2xl bg-white shadow-xl">
+    <main id="main-container" class=" flex flex-wrap text-left border rounded-2xl bg-white shadow-xl | sm:flex-nowrap md:w-auto">
         <div class="w-full">
-            <img class=" object-contain rounded-t-xl" src="./images/drawers.jpg" alt="drawers">
+            <img class=" object-contain rounded-t-xl h-fit sm:object-cover | sm:h-full sm:rounded-xl" src="./images/drawers.jpg" alt="drawers">
         </div>
-        <div class=" m-8">
-            <h1 class=" text-xl font-semibold font-abc" style="font-family: 'Manrope', sans-serif; ">
-                Shift the overall look and feel by adding these wonderful touches to furniture in your home
-            </h1>
-            <p class="mt-3">
-                Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.
-            </p>
-            <!--End-->
-        </div>
-        <div class=" flex justify-between pt-3 pb-3 px-8 py-8 w-full ">
-            <div class="flex content-center justify-between w-full">
-                <img class=" h-12 rounded-full" src="./images/avatar-michelle.jpg" alt="avatar-michelle">
-                <div class="">
-                    <h2>Michelle Appleton</h2>
-                    <p>28 Jun 2020</p>
+        <div class="text-container">
+            <div class=" m-8">
+                <h1 class=" text-xl font-semibold font-abc" style="font-family: 'Manrope', sans-serif; ">
+                    Shift the overall look and feel by adding these wonderful touches to furniture in your home
+                </h1>
+                <p class="mt-3">
+                    Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.
+                </p>
                 </div>
-                <!--After click-->
-                <h2 class="hidden">Share</h2>
-                <img class="hidden" src="./images/icon-facebook.svg" alt="facebook">
-                <img class="hidden" src="./images/icon-twitter.svg" alt="Twitter">
-                <img class="hidden" src="./images/icon-pinterest.svg" alt="icon-pinterest">
-                <!--Share-->
-                <div id="shareBtn" class="bg-slate-200 rounded-full p-4 h-12 w-12 ">
-                    <img class="h-full" src="./images/icon-share.svg" alt="icon-share">
+                <!--End-->
+    
+            <div class=" flex justify-between pt-3 pb-3 px-8 py-8 w-full ">
+                <div class="flex content-center justify-between w-full">
+                    <img class=" h-12 rounded-full" src="./images/avatar-michelle.jpg" alt="avatar-michelle">
+                    <div class="">
+                        <h2>Michelle Appleton</h2>
+                        <p>28 Jun 2020</p>
+                    </div>
+                    <!--After click-->
+                    <h2 class="hidden">Share</h2>
+                    <img class="hidden" src="./images/icon-facebook.svg" alt="facebook">
+                    <img class="hidden" src="./images/icon-twitter.svg" alt="Twitter">
+                    <img class="hidden" src="./images/icon-pinterest.svg" alt="icon-pinterest">
+                    <!--Share-->
+                    <div id="shareBtn" class="bg-slate-200 rounded-full p-4 h-12 w-12 ">
+                        <img class="h-full" src="./images/icon-share.svg" alt="icon-share">
+                    </div>
                 </div>
             </div>
         </div>
