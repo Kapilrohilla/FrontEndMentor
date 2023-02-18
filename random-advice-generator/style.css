@@ -59,6 +59,8 @@ button{
     align-content: center;
     border: none;
     cursor: pointer;
+    position: relative;
+    top: 38px;
 }
 #forDesktop{
     display: none;

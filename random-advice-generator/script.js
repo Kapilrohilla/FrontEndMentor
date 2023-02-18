@@ -6,7 +6,7 @@ function getData(){
         const {id,advice} = data['slip'];
         document.getElementById('advice').innerHTML = advice;
         document.getElementById('id').innerText = `Advice #${id}`
-        console.log('data fetched');
+        console.info('data fetched');
     })
     .catch(()=>console.warn('Unable to fetch data'));
 };

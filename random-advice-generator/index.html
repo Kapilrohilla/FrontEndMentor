@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class=" text-2xl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Advice Generator</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- converting to tailwind css -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
-<body>
+<body class=" p-4 font-extrabold min-h-screen grid justify-center items-center">
     <main>
-        <div class="container">
-            <p id="id">ADVICE #</p>
-            <p id="advice"></p>
-            <div id="forMobile">
+        <div class="container grid justify-items-center rounded-xl text-center p-2 leading-6">
+            <p id="id" class=" text-xs m-3">ADVICE #</p>
+            <p id="advice" class=" mb-3"></p>
+            <div id="forMobile" class="">
                 <svg width="295" height="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#cee3e9" d="M0 8h122v1H0zM173 8h122v1H173z"/><g transform="translate(138)" fill="#CEE3E9"><rect width="6" height="16" rx="3"/><rect x="14" width="6" height="16" rx="3"/></g></g></svg>
             </div>
             <div id="forDesktop">
